@@ -7,9 +7,11 @@ AS bikestation
 
 ON biketrips.start_station_id = bikestation.station_id
 
--- WHERE biketrips.start_date BETWEEN '2016-01-01' AND '2016-04-01' 
+-- WHERE biketrips.start_date BETWEEN '2016-01-01' AND '2016-04-01'  
+-- Untuk mendapat hasil jumlah trip Q1
 
 WHERE biketrips.start_date BETWEEN '2016-04-01' AND '2016-07-01' 
+-- Untuk mendapat hasil jumlah trip Q2
 
 AND bikestation.landmark = "Redwood City"
 AND biketrips.subscriber_type= "Subscriber" 
